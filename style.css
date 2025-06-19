@@ -1,0 +1,48 @@
+body {
+      background-color: #323232;
+      color: white;
+      font-family: 'Open Sans', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 30px;
+    }
+
+    table {
+      border-collapse: collapse;
+      margin: 0 auto; /* damit die Tabelle unter dem Titel mittig ist */
+    }
+
+    td {
+      width: 80px;
+      height: 80px;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 2.5rem;
+      cursor: pointer;
+      color: white;
+      border: 5px solid white;
+    }
+
+    /* Trennlinien nur innen sichtbar machen */
+    table tr:first-child td {
+      border-top: none;
+    }
+    table tr:last-child td {
+      border-bottom: none;
+    }
+    table tr td:first-child {
+      border-left: none;
+    }
+    table tr td:last-child {
+      border-right: none;
+    }
