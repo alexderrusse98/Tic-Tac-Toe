@@ -1,17 +1,21 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic-Tac-Toe</title>
-    <script src="./script.js"></script>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./script.js"></script>
 </head>
 <body onload="init()">
-     <div class="container">
-    <h1>Tic Tac Toe</h1>
+<div class="container">
+  <h1>Tic Tac Toe</h1>
+  <div id="game" style="position: relative; display: inline-block;">
     <div id="content"></div>
+    <div id="overlay" style="position: absolute; top: 0; left: 0; pointer-events: none;"></div>
   </div>
+  <div id="message" style="margin-top: 20px; font-size: 1.5rem; color: white;"></div>
+  <button id="restart-btn" onclick="resetGame()">Neustart</button>
+</div>
 
 </body>
 </html>

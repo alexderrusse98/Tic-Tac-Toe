@@ -1,48 +1,81 @@
 body {
-      background-color: #323232;
-      color: white;
-      font-family: 'Open Sans', sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
+  background-color: #323232;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
-    .container {
-      text-align: center;
-    }
+.container {
+  text-align: center;
+}
 
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 30px;
-    }
+h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
 
-    table {
-      border-collapse: collapse;
-      margin: 0 auto; /* damit die Tabelle unter dem Titel mittig ist */
-    }
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
 
-    td {
-      width: 80px;
-      height: 80px;
-      text-align: center;
-      vertical-align: middle;
-      font-size: 2.5rem;
-      cursor: pointer;
-      color: white;
-      border: 5px solid white;
-    }
+td {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 5px solid white;
+}
 
-    /* Trennlinien nur innen sichtbar machen */
-    table tr:first-child td {
-      border-top: none;
-    }
-    table tr:last-child td {
-      border-bottom: none;
-    }
-    table tr td:first-child {
-      border-left: none;
-    }
-    table tr td:last-child {
-      border-right: none;
-    }
+td:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
+
+table tr:first-child td {
+  border-top: none;
+}
+
+table tr:last-child td {
+  border-bottom: none;
+}
+
+table tr td:first-child {
+  border-left: none;
+}
+
+table tr td:last-child {
+  border-right: none;
+}
+#game {
+  position: relative;
+  display: inline-block;
+}
+
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+#restart-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #00B0EF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#restart-btn:hover {
+  background-color: #008bbd;
+}
